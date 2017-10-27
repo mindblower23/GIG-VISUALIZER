@@ -1,0 +1,264 @@
+html{
+  height: 100%;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #303030;
+  font: 10px verdana,sans-serif;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    background-color: #333;
+}
+::-webkit-scrollbar-track {
+    background-color: #444;
+    border: 1px solid #111;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f4b942;
+}
+select {
+    padding: 3px 0px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+
+    font-size: 14px;
+    outline:0px;
+    border-radius: 3px;
+    overflow: hidden;
+    color: #eee;
+}
+.page{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  min-height: 100%;
+}
+.infoBar{
+  flex: 0 1 auto;
+  font-size: 12px;
+  background-color: #303030;
+  margin: 2px 0px 2px 0px;
+}
+.infoBox{
+  float: left;
+  padding: 0px 5px 0px 5px;
+  margin: 2px;
+  height: 24px;
+  background-color: #202020;
+  border: 1px solid #000;
+  color: #fff;
+}
+.zoom{
+  margin-left: 4px;
+}
+.smpte{
+  text-align: right;
+  width: 140px;
+  font-size: 18px;
+}
+.bpm{
+  text-align: right;
+  width: 50px;
+  font-size: 18px;
+}
+.bpmFlash{
+  background-color: #909090;
+}
+.bpmFlashOne{
+  background-color: #ffffff;
+}
+.bars{
+  text-align: right;
+  width: 70px;
+  font-size: 18px;
+}
+.currentSongName{
+  width: 200px;
+}
+.nextSongName{
+  width: 200px;
+}
+
+.overviewContainer{
+  flex: 0 1 auto;
+  position: relative;
+  background-color: #111;
+  margin: 0px 4px 4px 4px;
+}
+.overviewTransportBox{
+  height: 5px;
+}
+
+.overviewTimeline{
+  position: relative;
+  height: 20px;
+
+}
+.overviewPosMarker{
+  position: absolute;
+  top: 0px;
+  z-index: 99;
+}
+.overviewPosMarkerArrow{
+  width: 0;
+	height: 0;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 5px solid #ffffff;
+}
+.overviewPosMarkerLine{
+  width: 1px;
+  height: 20px;
+  background-color: #fff;
+  /*border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;*/
+  margin-left: auto;
+  margin-right: auto;
+  mix-blend-mode: difference;
+  background-blend-mode: difference;
+}
+
+.overviewSong{
+  position: absolute;
+  white-space: nowrap;
+}
+.overviewSongPart{
+  display: inline-block;
+  height: 20px;
+}
+
+.timelineContainer{
+  flex: 0 1 auto;
+  position: relative;
+}
+.timelineCountdown{
+  position: absolute;
+  z-index: 99;
+  top: 0px;
+  width: 100px;
+  height: 200px;
+  font-size: 160px;
+  text-shadow: 0 0 10px #333;
+  color: #eee;
+}
+
+.timelinePosMarker{
+  position: absolute;
+  top: 0px;
+  z-index: 99;
+}
+.timelinePosMarkerArrow{
+  width: 0;
+	height: 0;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 12px solid #ffffff;
+}
+.timelinePosMarkerLine{
+  position: relative;
+  top: -4px;
+  width: 2px;
+  height: 210px;
+  background-color: #fff;
+  /*border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: 4px solid #000;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline{
+  position: relative;
+  background-color: #111;
+  height: 230px;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.timelineEmptyBox{
+  position: absolute;
+  white-space: nowrap;
+  height: 220px;
+  background-color: #666;
+}
+.song{
+  position: absolute;
+  white-space: nowrap;
+}
+
+.songBeatRuler{
+  position: relative;
+  height: 20px;
+  background-color: #404040;
+}
+
+.beatRulerDivider{
+  position: absolute;
+  height: 10px;
+  width: 1px;
+  background-color: #ffffff;
+}
+
+.songPart{
+  display: inline-block;
+  height: 200px;
+  overflow: hidden;
+}
+.songPartText{
+  padding: 4px;
+  font-size: 12px;
+  color: #eee;
+  /*mix-blend-mode: color-burn;*/
+  text-shadow: #000 1px 1px 4px;
+}
+
+
+
+.details{
+  flex: 1 0 auto;
+}
+
+.detailBox{
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+}
+.detailTitle{
+  margin: 0px 4px 4px 4px;
+  font-size: 14px;
+  color: #f4b942;
+}
+.title{
+  font-size: 14px;
+  height: 20px;
+  width: 300px;
+}
+.notes{
+  font-size: 14px;
+  height: 120px;
+  width: 300px;
+}
+.detailDivider{
+  float: left;
+  height: 1px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #666;
+}

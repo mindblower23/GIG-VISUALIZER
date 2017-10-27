@@ -1,0 +1,9 @@
+- Countdown einbauen
+- Current Song und Next Song Details einbauen
+- Current Part und next Part einbauen
+- Timecode Offset
+- Play Taste
+- Midi Port Auswahl
+
+---
+- Midi Daten senden (zB. ans Lichtpult)

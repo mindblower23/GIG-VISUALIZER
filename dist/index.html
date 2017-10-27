@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/overall.css" />
+    <title></title>
+  </head>
+  <body>
+
+    <div class="page">
+
+      <div class="infoBar">
+        <div class="zoom infoBox">
+          <select id="zoomSelect">
+            <option value="0.25">25%</option>
+            <option value="0.5">50%</option>
+            <option value="1" selected>100%</option>
+            <option value="2">200%</option>
+            <option value="3">300%</option>
+            <option value="4">400%</option>
+          </select>
+        </div>
+        <div class="smpte infoBox">00:00:00:00</div>
+        <div class="bpm infoBox">---</div>
+        <div class="bars infoBox">----:-:-</div>
+        <div class="currentSongName infoBox">---</div>
+        <div class="nextSongName infoBox">---</div>
+        <div style="clear: left"></div>
+      </div>
+
+      <div class="overviewContainer">
+        <div class="overviewTransportBox"></div>
+        <div class="overviewPosMarker">
+          <div class="overviewPosMarkerArrow"></div>
+          <div class="overviewPosMarkerLine"></div>
+        </div>
+        <div class="overviewTimeline"></div>
+      </div>
+
+      <div class="timelineContainer">
+        <div class="timelineCountdown"></div>
+        <div class="timelinePosMarker">
+          <div class="timelinePosMarkerArrow"></div>
+          <div class="timelinePosMarkerLine"></div>
+        </div>
+        <div class="timeline"></div>
+      </div>
+
+      <div class="details">
+        <div class="detailBox partDetail left">
+          <div class="detailTitle">Current Part</div>
+          <div class="title infoBox"></div><div style="clear: left;"></div>
+          <div class="notes infoBox"></div>
+        </div>
+        <div class="detailBox partDetail right">
+          <div class="detailTitle">Next Part</div>
+          <div class="title infoBox"></div><div style="clear: left;"></div>
+          <div class="notes infoBox"></div>
+        </div>
+
+        <div class="detailDivider"></div>
+
+        <div class="detailBox songDetail left">
+          <div class="detailTitle">Current Song</div>
+          <div class="title infoBox"></div><div style="clear: left;"></div>
+          <div class="notes infoBox"></div>
+        </div>
+        <div class="detailBox songDetail right">
+          <div class="detailTitle">Next Song</div>
+          <div class="title infoBox"></div><div style="clear: left;"></div>
+          <div class="notes infoBox"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="bundle.js"></script>
+
+  </body>
+</html>
